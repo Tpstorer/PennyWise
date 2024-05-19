@@ -45,15 +45,9 @@
                 android:inputType="textEmailAddress"
                 android:ems="10"
                 android:id="@+id/editTextTextEmailAddress"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3"
-                android:layout_marginTop="32dp" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" android:hint="Email"/>
-        <ImageView
-                android:src="@mipmap/pennywise_logo_round"
-                android:layout_width="356dp"
-                android:layout_height="334dp" android:id="@+id/imageView3"
-                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:hint="Email" android:layout_marginTop="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"/>
         <Button
                 android:text="Forgot Password?"
                 android:layout_width="wrap_content"
@@ -64,6 +58,12 @@
                 style="@style/Widget.Material3.Button.TextButton.Snackbar"
                 app:layout_constraintVertical_bias="0.25"
                 android:textColor="@color/black" android:layout_marginStart="16dp" android:layout_marginBottom="24dp"/>
+        <ImageView
+                android:src="@mipmap/updated_pennywise_logo"
+                android:layout_width="301dp"
+                android:layout_height="276dp" android:id="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="32dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
