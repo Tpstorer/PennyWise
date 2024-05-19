@@ -1,4 +1,3 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="recent_purchases_text">Recent Purchases</dimen>
 </resources>
