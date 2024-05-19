@@ -5,30 +5,65 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FirstFragment">
+        tools:context=".FirstFragment" android:fillViewport="true">
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="16dp">
         <Button
-                android:id="@+id/button_first"
+                android:text="Sign-Up?"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/next"
-                app:layout_constraintBottom_toTopOf="@id/textview_first"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
-        <TextView
-                android:id="@+id/textview_first"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/lorem_ipsum"
+                android:layout_height="wrap_content" android:id="@+id/signUpBut"
+                app:layout_constraintTop_toBottomOf="@+id/button_first"
                 app:layout_constraintBottom_toBottomOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                style="@style/Widget.Material3.Button.TextButton.Snackbar"
+                android:textColor="@color/black" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.25" android:layout_marginBottom="24dp"
+                android:layout_marginEnd="16dp"/>
+        <Button
+                android:id="@+id/button_first"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Log-In"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/button_first"/>
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" android:layout_marginTop="16dp"
+                style="@style/Widget.AppCompat.Button"/>
+        <EditText
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextTextPassword"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:hint="Password"/>
+        <EditText
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editTextTextEmailAddress"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                android:layout_marginTop="32dp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:hint="Email"/>
+        <ImageView
+                android:src="@mipmap/pennywise_logo_round"
+                android:layout_width="356dp"
+                android:layout_height="334dp" android:id="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <Button
+                android:text="Forgot Password?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/forgotPassBut"
+                app:layout_constraintTop_toBottomOf="@+id/button_first"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                style="@style/Widget.Material3.Button.TextButton.Snackbar"
+                app:layout_constraintVertical_bias="0.25"
+                android:textColor="@color/black" android:layout_marginStart="16dp" android:layout_marginBottom="24dp"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
