@@ -11,7 +11,7 @@
             android:layout_height="match_parent"
             android:padding="16dp">
         <Button
-                android:text="Sign-Up?"
+                android:text="@string/sign_up"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/signUpBut"
                 app:layout_constraintTop_toBottomOf="@+id/button_first"
@@ -25,7 +25,7 @@
                 android:id="@+id/button_first"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Log-In"
+                android:text="@string/log_in_label"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" android:layout_marginTop="16dp"
@@ -38,7 +38,7 @@
                 android:id="@+id/editTextTextPassword"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" android:layout_marginTop="24dp"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                android:hint="Password"/>
+                android:hint="@string/password"/>
         <EditText
                 android:layout_width="200dp"
                 android:layout_height="48dp"
@@ -47,15 +47,15 @@
                 android:id="@+id/editTextTextEmailAddress"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3"
                 android:layout_marginTop="32dp" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" android:hint="Email"/>
+                app:layout_constraintEnd_toEndOf="parent" android:hint="@string/email"/>
         <ImageView
                 android:src="@mipmap/pennywise_logo_round"
                 android:layout_width="356dp"
                 android:layout_height="334dp" android:id="@+id/imageView3"
                 app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent" android:contentDescription="@string/app_name"/>
         <Button
-                android:text="Forgot Password?"
+                android:text="@string/forgot_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/forgotPassBut"
                 app:layout_constraintTop_toBottomOf="@+id/button_first"
