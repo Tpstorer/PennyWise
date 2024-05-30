@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
               public boolean onNavigationItemSelected(@NonNull  MenuItem item) {
                 Fragment fragment = null;
-                switch (item.getItemId()){
+                /*switch (item.getItemId()){
                     case R.id.nav_home:
                         fragment = new FirstFragment();
                         break;
@@ -56,9 +56,13 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_bills:
                         fragment = new SecondFragment();
                         break;
-                }
+
+
+                }*/
 
                 return true;
+
+
             }
         });
 
